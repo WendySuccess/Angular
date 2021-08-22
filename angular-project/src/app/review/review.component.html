@@ -1,0 +1,21 @@
+<h2>Your score {{ score}}</h2>
+<br>
+
+<div *ngFor="let quiz of Quizs; let i = index;">
+<div class="card" style="width: 50rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{ quiz.Question}}</h5>
+      <p class="card-text">{{ quiz.OptionA}}</p>
+      <p class="card-text">{{ quiz.OptionB}}</p>
+      <p class="card-text">{{ quiz.OptionC}}</p>
+      <p class="card-text">{{ quiz.OptionD}}</p>
+      <div class="px-1 py-1">
+          Correct Answer
+        <input type="text" name="name" placeholder="Answer (A/B/C/D)" class="form-control" [(ngModel)]="quiz.answer" >
+    </div>
+  </div>
+
+</div>
+<br>
+</div>

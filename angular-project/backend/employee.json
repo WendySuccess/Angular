@@ -1,0 +1,98 @@
+{
+  "Quiz": [
+    {
+      "id": 101,
+      "Question": "Multiple inheritance means",
+      "OptionA": "(a) one class inheriting from more super classes",
+      "OptionB": "(b) more classes inheriting from one super class",
+      "OptionC": "(c) more classes inheriting from more super classes",
+      "OptionD": "(d) None of the above",
+      "answer": "a",
+      "useranswer": ""
+    },
+    {
+      "id": 102,
+      "Question": "Which statement is not true in java language",
+      "OptionA": "(a) A public member of a class can be accessed in all the packages.",
+      "OptionB": "(b) A private member of a class cannot be accessed by the methods of the same class.",
+      "OptionC": "(c) A private member of a class cannot be accessed from its derived class.",
+      "OptionD": "(d) A protected member of a class can be accessed from its derived class.",
+      "answer": "b",
+      "useranswer": ""
+    },
+    {
+      "id": 103,
+      "Question": "To prevent any method from overriding, we declare the method as,",
+      "OptionA": "(a) static",
+      "OptionB": "(b) const",
+      "OptionC": "(c) final",
+      "OptionD": "(d) abstract",
+      "answer": "c",
+      "useranswer": ""
+    },
+    {
+      "id": 104,
+      "Question": "Which one of the following is not true?",
+      "OptionA": "(a) A class containing abstract methods is called an abstract class.",
+      "OptionB": "(b) Abstract methods should be implemented in the derived class.",
+      "OptionC": "(c) An abstract class cannot have non-abstract methods.",
+      "OptionD": "(d) A class must be qualified as ‘abstract’ class, if it contains one abstract method.",
+      "answer": "c",
+      "useranswer": ""
+    },
+    {
+      "id": 105,
+      "Question": "The fields in an interface are implicitly specified as,",
+      "OptionA": "(a) static only",
+      "OptionB": "(b) protected",
+      "OptionC": "(c) private",
+      "OptionD": "(d) both static and final",
+      "answer": "d",
+      "useranswer": ""
+    },
+    {
+      "id": 106,
+      "Question": "Which of the following is not true?",
+      "OptionA": "(a) An interface can extend another interface.",
+      "OptionB": "(b) A class which is implementing an interface must implement all the methods of the interface.",
+      "OptionC": "(c) An interface can implement another interface.",
+      "OptionD": "(d) An interface is a solution for multiple inheritance in java.",
+      "answer": "c",
+      "useranswer": ""
+    },
+    {
+      "id": 102,
+      "Question": "Which statement is not true in java language",
+      "OptionA": "(a) A public member of a class can be accessed in all the packages.",
+      "OptionB": "(b) A private member of a class cannot be accessed by the methods of the same class.",
+      "OptionC": "(c) A private member of a class cannot be accessed from its derived class.",
+      "OptionD": "(d) A protected member of a class can be accessed from its derived class.",
+      "answer": "b",
+      "useranswer": ""
+    },
+    {
+      "id": 102,
+      "Question": "Which statement is not true in java language",
+      "OptionA": "(a) A public member of a class can be accessed in all the packages.",
+      "OptionB": "(b) A private member of a class cannot be accessed by the methods of the same class.",
+      "OptionC": "(c) A private member of a class cannot be accessed from its derived class.",
+      "OptionD": "(d) A protected member of a class can be accessed from its derived class.",
+      "answer": "b",
+      "useranswer": ""
+    }
+  ],
+  "visitors": [
+    {
+      "id": 5001,
+      "username": "wendy",
+      "password": "1234",
+      "email": "wendy@gamil.com"
+    },
+    {
+      "id": 5002,
+      "username": "Jame",
+      "password": "1234",
+      "email": "wendy@gamil.com"
+    }
+  ]
+}

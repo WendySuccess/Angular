@@ -1,0 +1,29 @@
+<h2>Welcome to quiz</h2>
+<br>
+
+<div *ngFor="let quiz of Quizs; let i = index;">
+<div class="card" style="width: 50rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{ quiz.Question}}</h5>
+      <p class="card-text">{{ quiz.OptionA}}</p>
+      <p class="card-text">{{ quiz.OptionB}}</p>
+      <p class="card-text">{{ quiz.OptionC}}</p>
+      <p class="card-text">{{ quiz.OptionD}}</p>
+      <div class="px-1 py-1">
+        <!-- <input type="text" name="name" placeholder="Answer (A/B/C/D)" class="form-control" [(ngModel)]="quiz.useranswer" > -->
+        <select class="form-select" aria-label="Default select example"  [(ngModel)]="quiz.useranswer" >
+          <option selected>Open this select menu</option>
+          <option value="a">{{ quiz.OptionA}}</option>
+          <option value="b">{{ quiz.OptionB}}</option>
+          <option value="c">{{ quiz.OptionC}}</option>
+          <option value="c">{{ quiz.OptionD}}</option>
+        </select>
+      </div>
+  </div>
+
+</div>
+<br>
+</div>
+
+<input type="submit" value = "Review and display result" class= "btn btn-success" (click) ="CheckAnswer()" > 

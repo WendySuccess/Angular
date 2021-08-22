@@ -1,0 +1,41 @@
+<div  style="position: absolute;
+top: 30%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;">
+<H2>Register</H2>
+<form name='visitorForm' #f ="ngForm" (ngSubmit) = "f.form.valid && register()"  novalidate >
+    <div class="mb-3">
+        <input type="text" name="name" #username= "ngModel" placeholder="User Name" class="form-control" [(ngModel)]="visitor.username" required 
+        minlength="6"
+        [ngClass] ="{ 'is-invalid' : f.submitted && username.invalid }">
+        <div *ngIf="f.submitted && username.invalid" class="invalid-feedback">
+        <div *ngIf="username.errors?.required">username is required</div>
+        <div *ngIf="username.errors?.minlength">username must be at least 6 character</div>
+    </div>
+    </div>
+    <div class="mb-3">
+        <input type="password" name="name" #password = "ngModel" placeholder="Password" class="form-control"[(ngModel)]="visitor.password" required 
+        [ngClass] ="{ 'is-invalid' : f.submitted && password.invalid }">
+        <div *ngIf="f.submitted && password.invalid" class="invalid-feedback" >
+            <div *ngIf="password.errors?.required">password is required</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <input type="text" name="email" #email = "ngModel" placeholder="email" class="form-control"[(ngModel)]="visitor.email" required email        
+        [ngClass] ="{ 'is-invalid' : f.submitted && email.invalid }">
+        <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+            <div *ngIf="email.errors?.required">email is required</div>
+            <div *ngIf="email.errors?.email">email is not valid</div>
+        </div>
+    </div>
+    
+    <input type="submit" value = "Register" class= "btn btn-success" > | 
+    <input type="reset" value = "Clear Fields" class= "btn btn-danger" >| 
+    <a class ="btn btn-secondary" routerLink="/users">Back</a>
+
+
+</form>
+</div>
+
+

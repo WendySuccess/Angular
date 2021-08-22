@@ -1,0 +1,26 @@
+<a class='btn btn-success' routerLink= '/user-add'>Add new user</a>
+<br/> <br/>
+<h3>User List</h3>
+
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>Actions</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of userList">
+        <td> {{ user.id }}</td>
+        <td> {{ user.name }}</td>
+        <td> {{ user.email }}</td>
+        <td> <a [routerLink] = "['/user-detail',user.id]" class= "btn btn-secondary">View</a></td>
+        <td> <a (click)= 'deleteUser(user.id)' class= "btn btn-danger">Delete</a></td>
+        <td> <a [routerLink]="['/user-update',user.id]" class= "btn btn-info">Update</a></td>
+    </tr>
+    </tbody>
+</table>

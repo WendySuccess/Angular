@@ -1,0 +1,36 @@
+<!-- <a routerLink= 'home'> Home</a> |
+<a routerLink= 'users'>users</a> | -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink= ''>Simple Exam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink= 'quiz'>Quiz</a>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <div *ngIf=!loginStatus()>
+                    <a routerLink= "login" class="btn btn-outline-success" >Login</a> &nbsp; 
+                    <a routerLink= "register" class="btn btn-outline-success" >register</a>&nbsp; 
+                </div>
+                <div *ngIf=loginStatus()>
+                <button routerLink= "" class="btn btn-outline-danger" (click)='logout()' >Logout</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="p-4 mb-4  ">
+    <div class="container-fluid py-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

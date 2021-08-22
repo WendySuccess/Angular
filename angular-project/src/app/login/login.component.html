@@ -1,0 +1,23 @@
+<div  style="position: absolute;
+top: 30%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;">
+<h3>Please Login</h3>
+
+<form>
+    <div class="mb-3">
+        <input type="text" name="name" placeholder="User Name" class="form-control" [(ngModel)]="visitor.username">
+    </div>
+    <div class="mb-3">
+        <input type="password" name="name" placeholder="Password" class="form-control"[(ngModel)]="visitor.password">
+    </div>
+    
+    <input type="submit" value = "Login" class= "btn btn-success" (click) ="login()" > | 
+    <input type="reset" value = "Clear Fields" class= "btn btn-danger" >| 
+    <!-- <a class ="btn btn-secondary" routerLink="/users">Back</a> -->
+    <a class ="btn btn-secondary" routerLink="/register">Register</a>
+
+
+</form>
+</div>
